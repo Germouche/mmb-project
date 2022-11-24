@@ -1,5 +1,8 @@
-beta_cost = 0.06268178964693148
-beta_time_cycling = 1.2132275570098483
-beta_time_driving = 3.5202333461957256
-beta_time_public = -105.31022919541388
-beta_time_walk = 0.6882915579857297
+asc_cycling = -4.590558666334083
+asc_driving = -2.072175716254069
+asc_public = -2.4397180008494908
+beta_cost = -0.1417944174636626
+beta_time_cycling = -5.195456913412916
+beta_time_driving = -5.874430025703574
+beta_time_public = -3.199827059298771
+beta_time_walk = -8.36775336416628

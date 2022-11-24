@@ -1,0 +1,10 @@
+asc_cycling = -4.657299106157755
+asc_driving = -2.9247601238732357
+asc_public = -2.494753873349514
+beta_cost = -0.13047813636001923
+beta_drivingliscence = 1.3591502880229585
+beta_interchange = -0.03018580120693115
+beta_time_cycling = -5.402393943434578
+beta_time_driving = -6.437378250922737
+beta_time_public = -3.3938398107871346
+beta_time_walk = -8.563140629615452
