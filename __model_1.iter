@@ -1,0 +1,8 @@
+asc_cycling = -4.590519276875814
+asc_driving = -2.0720228886530583
+asc_public = -2.4394781674897867
+beta_cost = -0.1417802001769664
+beta_time_cycling = -5.195891312467333
+beta_time_driving = -5.875432946661433
+beta_time_public = -3.2005926081132783
+beta_time_walk = -8.367590629271229
