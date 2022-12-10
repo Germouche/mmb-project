@@ -1,0 +1,117 @@
+%% This file is designed to be included into a LaTeX document
+%% See http://www.latex-project.org for information about LaTeX
+%% model_3 - Report from biogeme 3.2.10 [2022-12-10]
+%% biogeme 3.2.10 [2022-12-10]
+%% Version entirely written in Python
+%% Home page: http://biogeme.epfl.ch
+%% Submit questions to https://groups.google.com/d/forum/biogeme
+%% Michel Bierlaire, Transport and Mobility Laboratory, Ecole Polytechnique F¨¦d¨¦rale de Lausanne (EPFL)
+
+%% This file has automatically been generated on 2022-12-10 18:56:21.968301</p>
+
+%%Database name: trips
+
+%% General statistics
+\section{General statistics}
+\begin{tabular}{ll}
+Number of estimated parameters & 11 \\
+Sample size & 5000 \\
+Excluded observations & 0 \\
+Init log likelihood & -4665.945 \\
+Final log likelihood & -4071.611 \\
+Likelihood ratio test for the init. model & 1188.668 \\
+Rho-square for the init. model & 0.127 \\
+Rho-square-bar for the init. model & 0.125 \\
+Akaike Information Criterion & 8165.221 \\
+Bayesian Information Criterion & 8236.91 \\
+Final gradient norm & 2.3432E-02 \\
+Nbr of threads & 16 \\
+Algorithm & \verb$Newton with trust region for simple bound constraints$ \\
+Proportion analytical hessian & \verb$100.0%$ \\
+Relative projected gradient & \verb$9.109418e-06$ \\
+Relative change & \verb$4.746699e-06$ \\
+Number of iterations & \verb$11$ \\
+Number of function evaluations & \verb$30$ \\
+Number of gradient evaluations & \verb$10$ \\
+Number of hessian evaluations & \verb$10$ \\
+Cause of termination & \verb$Relative change = 4.75e-06 <= 1e-05$ \\
+Optimization time & \verb$0:00:01.172534$ \\
+\end{tabular}
+
+%%Parameter estimates
+\section{Parameter estimates}
+\begin{tabular}{lrrrr}
+ & Value & Rob. Std err & Rob. t-test & Rob. p-value \\
+asc_cycling & -1.81 & 0.279 & -6.46 & 1.03e-10 \\
+asc_driving & 0.814 & 0.274 & 2.97 & 0.00295 \\
+asc_public & 1.97 & 0.174 & 11.4 & 0.0 \\
+beta_cost & -0.0915 & 0.0146 & -6.27 & 3.55e-10 \\
+beta_driving_traffic_percent & -2.6 & 0.241 & -10.8 & 0.0 \\
+beta_drivinglicense & 1.45 & 0.0718 & 20.1 & 0.0 \\
+beta_time_cycling & -3.03 & 0.277 & -10.9 & 0.0 \\
+beta_time_driving & -2.65 & 0.27 & -9.82 & 0.0 \\
+beta_time_public & -2.22 & 0.192 & -11.6 & 0.0 \\
+beta_time_walk & -5.38 & 0.299 & -18.0 & 0.0 \\
+lambda_boxcox & 0.351 & 0.0583 & 6.01 & 1.87e-09 \\
+\end{tabular}
+
+%%Correlation
+\section{Correlation}
+\begin{tabular}{lrrrrrrrr}
+ & Covariance & Correlation & t-test & p-value & Rob. cov. & Rob. corr. & Rob. t-test & Rob. p-value \\
+asc_driving-asc_cycling & 0.0376 & 0.517 & 9.86 & 0.0 & 0.0376 & 0.491 & 9.38 & 0.0 \\
+asc_public-asc_cycling & 0.0288 & 0.614 & 18.2 & 0.0 & 0.0305 & 0.629 & 17.4 & 0.0 \\
+asc_public-asc_driving & 0.0361 & 0.725 & 6.01 & 1.84e-09 & 0.0329 & 0.691 & 5.84 & 5.3e-09 \\
+beta_cost-asc_cycling & 0.00025 & 0.0666 & 6.57 & 5.07e-11 & 0.000367 & 0.0901 & 6.16 & 7.44e-10 \\
+beta_cost-asc_driving & -0.000288 & -0.0721 & -3.24 & 0.0012 & -9.15e-05 & -0.0229 & -3.3 & 0.000975 \\
+beta_cost-asc_public & -0.000335 & -0.13 & -11.4 & 0.0 & -0.000208 & -0.0821 & -11.8 & 0.0 \\
+beta_driving_traffic_percent-asc_cycling & -0.0069 & -0.112 & -2.14 & 0.0323 & -0.00684 & -0.102 & -2.05 & 0.0399 \\
+beta_driving_traffic_percent-asc_driving & -0.0373 & -0.568 & -7.5 & 6.62e-14 & -0.04 & -0.607 & -7.4 & 1.36e-13 \\
+beta_driving_traffic_percent-asc_public & -0.0051 & -0.121 & -14.6 & 0.0 & -0.00509 & -0.122 & -14.6 & 0.0 \\
+beta_driving_traffic_percent-beta_cost & -0.000604 & -0.178 & -10.5 & 0.0 & -0.000525 & -0.149 & -10.3 & 0.0 \\
+beta_drivinglicense-asc_cycling & -0.000373 & -0.0197 & 11.9 & 0.0 & -0.000129 & -0.00643 & 11.3 & 0.0 \\
+beta_drivinglicense-asc_driving & -0.00343 & -0.171 & 2.11 & 0.0348 & -0.0026 & -0.132 & 2.16 & 0.0307 \\
+beta_drivinglicense-asc_public & -0.000295 & -0.0228 & -2.71 & 0.00669 & 0.000479 & 0.0384 & -2.84 & 0.00444 \\
+beta_drivinglicense-beta_cost & 5.07e-05 & 0.0489 & 21.1 & 0.0 & 3.74e-05 & 0.0357 & 21.1 & 0.0 \\
+beta_drivinglicense-beta_driving_traffic_percent & -0.00228 & -0.134 & 15.8 & 0.0 & -0.00205 & -0.118 & 15.6 & 0.0 \\
+beta_time_cycling-asc_cycling & 0.04 & 0.553 & -4.79 & 1.7e-06 & 0.0441 & 0.569 & -4.73 & 2.28e-06 \\
+beta_time_cycling-asc_driving & 0.0261 & 0.339 & -12.0 & 0.0 & 0.0275 & 0.363 & -12.4 & 0.0 \\
+beta_time_cycling-asc_public & 0.00343 & 0.0692 & -15.7 & 0.0 & 0.00502 & 0.104 & -16.1 & 0.0 \\
+beta_time_cycling-beta_cost & 6.57e-05 & 0.0165 & -10.6 & 0.0 & 0.000251 & 0.0623 & -10.6 & 0.0 \\
+beta_time_cycling-beta_driving_traffic_percent & -0.0059 & -0.0903 & -1.12 & 0.263 & -0.00728 & -0.109 & -1.1 & 0.271 \\
+beta_time_cycling-beta_drivinglicense & -0.00112 & -0.0559 & -15.4 & 0.0 & -0.000799 & -0.0402 & -15.5 & 0.0 \\
+beta_time_driving-asc_cycling & 0.0143 & 0.206 & -2.54 & 0.0111 & 0.0104 & 0.137 & -2.34 & 0.0193 \\
+beta_time_driving-asc_driving & 0.0444 & 0.601 & -14.2 & 0.0 & 0.0445 & 0.601 & -14.3 & 0.0 \\
+beta_time_driving-asc_public & 0.00733 & 0.154 & -15.6 & 0.0 & 0.00525 & 0.112 & -15.2 & 0.0 \\
+beta_time_driving-beta_cost & -0.00031 & -0.0813 & -9.57 & 0.0 & -0.000113 & -0.0287 & -9.45 & 0.0 \\
+beta_time_driving-beta_driving_traffic_percent & -0.0181 & -0.288 & -0.122 & 0.903 & -0.0212 & -0.326 & -0.118 & 0.906 \\
+beta_time_driving-beta_drivinglicense & -0.00134 & -0.07 & -14.6 & 0.0 & -0.000922 & -0.0475 & -14.5 & 0.0 \\
+beta_time_driving-beta_time_cycling & 0.0565 & 0.768 & 2.03 & 0.042 & 0.0549 & 0.735 & 1.89 & 0.0592 \\
+beta_time_public-asc_cycling & 0.015 & 0.299 & -1.52 & 0.128 & 0.013 & 0.242 & -1.4 & 0.161 \\
+beta_time_public-asc_driving & 0.0312 & 0.585 & -13.4 & 0.0 & 0.0294 & 0.561 & -13.2 & 0.0 \\
+beta_time_public-asc_public & 0.0128 & 0.371 & -20.2 & 0.0 & 0.0103 & 0.309 & -19.5 & 0.0 \\
+beta_time_public-beta_cost & -0.000243 & -0.088 & -11.0 & 0.0 & -8.27e-05 & -0.0296 & -11.1 & 0.0 \\
+beta_time_public-beta_driving_traffic_percent & -0.00787 & -0.174 & 1.15 & 0.252 & -0.00894 & -0.194 & 1.12 & 0.261 \\
+beta_time_public-beta_drivinglicense & -0.0012 & -0.0868 & -17.4 & 0.0 & -0.000879 & -0.0638 & -17.6 & 0.0 \\
+beta_time_public-beta_time_cycling & 0.0377 & 0.709 & 4.11 & 3.95e-05 & 0.0375 & 0.707 & 4.1 & 4.17e-05 \\
+beta_time_public-beta_time_driving & 0.0447 & 0.877 & 3.17 & 0.00151 & 0.0456 & 0.881 & 3.14 & 0.00171 \\
+beta_time_walk-asc_cycling & -0.00979 & -0.129 & -8.59 & 0.0 & -0.0154 & -0.184 & -8.02 & 1.11e-15 \\
+beta_time_walk-asc_driving & 0.00563 & 0.0696 & -15.9 & 0.0 & 0.00728 & 0.0891 & -16.0 & 0.0 \\
+beta_time_walk-asc_public & -0.0184 & -0.353 & -18.8 & 0.0 & -0.0191 & -0.369 & -18.5 & 0.0 \\
+beta_time_walk-beta_cost & -0.00017 & -0.0407 & -18.1 & 0.0 & -7.71e-05 & -0.0177 & -17.7 & 0.0 \\
+beta_time_walk-beta_driving_traffic_percent & -0.00357 & -0.052 & -7.22 & 5.06e-13 & -0.00556 & -0.0773 & -6.97 & 3.06e-12 \\
+beta_time_walk-beta_drivinglicense & -0.00152 & -0.0722 & -22.4 & 0.0 & -0.00156 & -0.0729 & -21.9 & 0.0 \\
+beta_time_walk-beta_time_cycling & 0.0571 & 0.709 & -10.8 & 0.0 & 0.054 & 0.653 & -9.77 & 0.0 \\
+beta_time_walk-beta_time_driving & 0.0628 & 0.812 & -15.8 & 0.0 & 0.0664 & 0.824 & -15.9 & 0.0 \\
+beta_time_walk-beta_time_public & 0.0388 & 0.694 & -15.0 & 0.0 & 0.0417 & 0.728 & -15.3 & 0.0 \\
+lambda_boxcox-asc_cycling & 0.000929 & 0.0598 & 8.15 & 4.44e-16 & 0.00178 & 0.109 & 7.73 & 1.11e-14 \\
+lambda_boxcox-asc_driving & -0.00081 & -0.0491 & -1.61 & 0.107 & -0.00147 & -0.0922 & -1.62 & 0.104 \\
+lambda_boxcox-asc_public & 0.00262 & 0.246 & -9.31 & 0.0 & 0.00236 & 0.233 & -9.55 & 0.0 \\
+lambda_boxcox-beta_cost & 2.87e-05 & 0.0337 & 7.3 & 2.96e-13 & -3.36e-06 & -0.00395 & 7.34 & 2.08e-13 \\
+lambda_boxcox-beta_driving_traffic_percent & -0.000518 & -0.0369 & 12.0 & 0.0 & -1.9e-05 & -0.00135 & 11.9 & 0.0 \\
+lambda_boxcox-beta_drivinglicense & 8.03e-05 & 0.0187 & -11.8 & 0.0 & 7.14e-05 & 0.017 & -11.9 & 0.0 \\
+lambda_boxcox-beta_time_cycling & -0.011 & -0.671 & 10.6 & 0.0 & -0.0102 & -0.629 & 10.7 & 0.0 \\
+lambda_boxcox-beta_time_driving & -0.0115 & -0.73 & 9.63 & 0.0 & -0.0119 & -0.753 & 9.49 & 0.0 \\
+lambda_boxcox-beta_time_public & -0.00592 & -0.52 & 11.3 & 0.0 & -0.00628 & -0.562 & 11.2 & 0.0 \\
+lambda_boxcox-beta_time_walk & -0.0141 & -0.818 & 16.8 & 0.0 & -0.0143 & -0.821 & 16.4 & 0.0 \\
+\end{tabular}
