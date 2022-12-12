@@ -1,8 +1,8 @@
-asc_cycling = -4.590520128343058
-asc_driving = -2.072025679669074
-asc_public = -2.439479904203871
-beta_cost = -0.14178487147255867
-beta_time_cycling = -5.195889558525784
-beta_time_driving = -5.875433413865305
-beta_time_public = -3.200593580382938
-beta_time_walk = -8.367587169937961
+asc_cycling = -4.590557829801665
+asc_driving = -2.0721698724900244
+asc_public = -2.4397136312304872
+beta_cost = -0.14179406183873947
+beta_time_cycling = -5.195467749689817
+beta_time_driving = -5.874441574590108
+beta_time_public = -3.1998482409205984
+beta_time_walk = -8.367751305074068
