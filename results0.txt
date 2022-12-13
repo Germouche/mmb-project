@@ -1,0 +1,66 @@
+%% This file is designed to be included into a LaTeX document
+%% See http://www.latex-project.org for information about LaTeX
+%% model_base - Report from biogeme 3.2.10 [2022-12-13]
+%% biogeme 3.2.10 [2022-12-13]
+%% Version entirely written in Python
+%% Home page: http://biogeme.epfl.ch
+%% Submit questions to https://groups.google.com/d/forum/biogeme
+%% Michel Bierlaire, Transport and Mobility Laboratory, Ecole Polytechnique F¨¦d¨¦rale de Lausanne (EPFL)
+
+%% This file has automatically been generated on 2022-12-13 10:19:09.814428</p>
+
+%%Database name: trips
+
+%% General statistics
+\section{General statistics}
+\begin{tabular}{ll}
+Number of estimated parameters & 5 \\
+Sample size & 5000 \\
+Excluded observations & 0 \\
+Init log likelihood & -6931.472 \\
+Final log likelihood & -4722.972 \\
+Likelihood ratio test for the init. model & 4417 \\
+Rho-square for the init. model & 0.319 \\
+Rho-square-bar for the init. model & 0.318 \\
+Akaike Information Criterion & 9455.944 \\
+Bayesian Information Criterion & 9488.53 \\
+Final gradient norm & 1.0691E-03 \\
+Nbr of threads & 16 \\
+Algorithm & \verb$Newton with trust region for simple bound constraints$ \\
+Proportion analytical hessian & \verb$100.0%$ \\
+Relative projected gradient & \verb$4.657939e-07$ \\
+Relative change & \verb$0.001747471$ \\
+Number of iterations & \verb$6$ \\
+Number of function evaluations & \verb$19$ \\
+Number of gradient evaluations & \verb$7$ \\
+Number of hessian evaluations & \verb$7$ \\
+Cause of termination & \verb$Relative gradient = 4.7e-07 <= 6.1e-06$ \\
+Optimization time & \verb$0:00:00.142817$ \\
+\end{tabular}
+
+%%Parameter estimates
+\section{Parameter estimates}
+\begin{tabular}{lrrrr}
+ & Value & Rob. Std err & Rob. t-test & Rob. p-value \\
+asc_cycling & -3.66 & 0.101 & -36.3 & 0.0 \\
+asc_driving & -1.34 & 0.0764 & -17.5 & 0.0 \\
+asc_public & -0.559 & 0.0526 & -10.6 & 0.0 \\
+beta_cost & -0.15 & 0.0138 & -10.9 & 0.0 \\
+beta_time & -5.41 & 0.188 & -28.7 & 0.0 \\
+\end{tabular}
+
+%%Correlation
+\section{Correlation}
+\begin{tabular}{lrrrrrrrr}
+ & Covariance & Correlation & t-test & p-value & Rob. cov. & Rob. corr. & Rob. t-test & Rob. p-value \\
+asc_driving-asc_cycling & 0.00381 & 0.554 & 28.4 & 0.0 & 0.00465 & 0.603 & 28.4 & 0.0 \\
+asc_public-asc_cycling & 0.00234 & 0.472 & 36.7 & 0.0 & 0.00276 & 0.521 & 36.0 & 0.0 \\
+asc_public-asc_driving & 0.0028 & 0.751 & 16.3 & 0.0 & 0.0032 & 0.796 & 16.5 & 0.0 \\
+beta_cost-asc_cycling & 0.000119 & 0.0948 & 36.9 & 0.0 & 0.000193 & 0.139 & 35.2 & 0.0 \\
+beta_cost-asc_driving & -0.000119 & -0.126 & 15.9 & 0.0 & -7.74e-05 & -0.0735 & 15.1 & 0.0 \\
+beta_cost-asc_public & -0.000138 & -0.202 & 7.31 & 2.64e-13 & -0.000125 & -0.172 & 7.22 & 5.03e-13 \\
+beta_time-asc_cycling & 0.00783 & 0.462 & -11.1 & 0.0 & 0.0104 & 0.55 & -11.1 & 0.0 \\
+beta_time-asc_driving & 0.00976 & 0.765 & -31.1 & 0.0 & 0.0116 & 0.804 & -30.2 & 0.0 \\
+beta_time-asc_public & 0.00416 & 0.453 & -30.2 & 0.0 & 0.00612 & 0.618 & -30.1 & 0.0 \\
+beta_time-beta_cost & 3.09e-05 & 0.0133 & -29.6 & 0.0 & 0.000253 & 0.0975 & -28.1 & 0.0 \\
+\end{tabular}

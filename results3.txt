@@ -5,7 +5,7 @@
 %% Version entirely written in Python
 %% Home page: http://biogeme.epfl.ch
 %% Submit questions to https://groups.google.com/d/forum/biogeme
-%% Michel Bierlaire, Transport and Mobility Laboratory, Ecole Polytechnique Fédérale de Lausanne (EPFL)
+%% Michel Bierlaire, Transport and Mobility Laboratory, Ecole Polytechnique Fï¿½dï¿½rale de Lausanne (EPFL)
 
 %% This file has automatically been generated on 2022-12-12 22:13:37.366844</p>
 

@@ -1,0 +1,87 @@
+%% This file is designed to be included into a LaTeX document
+%% See http://www.latex-project.org for information about LaTeX
+%% model_1 - Report from biogeme 3.2.10 [2022-12-13]
+%% biogeme 3.2.10 [2022-12-13]
+%% Version entirely written in Python
+%% Home page: http://biogeme.epfl.ch
+%% Submit questions to https://groups.google.com/d/forum/biogeme
+%% Michel Bierlaire, Transport and Mobility Laboratory, Ecole Polytechnique F¨¦d¨¦rale de Lausanne (EPFL)
+
+%% This file has automatically been generated on 2022-12-13 10:21:15.052850</p>
+
+%%Database name: trips
+
+%% General statistics
+\section{General statistics}
+\begin{tabular}{ll}
+Number of estimated parameters & 8 \\
+Sample size & 5000 \\
+Excluded observations & 0 \\
+Init log likelihood & -6931.472 \\
+Final log likelihood & -4412.008 \\
+Likelihood ratio test for the init. model & 5038.928 \\
+Rho-square for the init. model & 0.363 \\
+Rho-square-bar for the init. model & 0.362 \\
+Akaike Information Criterion & 8840.016 \\
+Bayesian Information Criterion & 8892.153 \\
+Final gradient norm & 2.5518E-02 \\
+Nbr of threads & 16 \\
+Algorithm & \verb$Newton with trust region for simple bound constraints$ \\
+Proportion analytical hessian & \verb$100.0%$ \\
+Relative projected gradient & \verb$5.684179e-06$ \\
+Relative change & \verb$4.663384e-06$ \\
+Number of iterations & \verb$8$ \\
+Number of function evaluations & \verb$25$ \\
+Number of gradient evaluations & \verb$9$ \\
+Number of hessian evaluations & \verb$9$ \\
+Cause of termination & \verb$Relative change = 4.66e-06 <= 1e-05$ \\
+Optimization time & \verb$0:00:00.263841$ \\
+\end{tabular}
+
+%%Parameter estimates
+\section{Parameter estimates}
+\begin{tabular}{lrrrr}
+ & Value & Rob. Std err & Rob. t-test & Rob. p-value \\
+asc_cycling & -4.59 & 0.179 & -25.6 & 0.0 \\
+asc_driving & -2.07 & 0.12 & -17.2 & 0.0 \\
+asc_public & -2.44 & 0.122 & -20.0 & 0.0 \\
+beta_cost & -0.142 & 0.0152 & -9.33 & 0.0 \\
+beta_time_cycling & -5.2 & 0.424 & -12.3 & 0.0 \\
+beta_time_driving & -5.88 & 0.36 & -16.3 & 0.0 \\
+beta_time_public & -3.2 & 0.231 & -13.9 & 0.0 \\
+beta_time_walk & -8.37 & 0.36 & -23.2 & 0.0 \\
+\end{tabular}
+
+%%Correlation
+\section{Correlation}
+\begin{tabular}{lrrrrrrrr}
+ & Covariance & Correlation & t-test & p-value & Rob. cov. & Rob. corr. & Rob. t-test & Rob. p-value \\
+asc_driving-asc_cycling & 0.0098 & 0.574 & 19.0 & 0.0 & 0.0137 & 0.635 & 18.2 & 0.0 \\
+asc_public-asc_cycling & 0.00955 & 0.525 & 15.4 & 0.0 & 0.0131 & 0.602 & 15.0 & 0.0 \\
+asc_public-asc_driving & 0.00967 & 0.804 & -5.33 & 9.91e-08 & 0.0122 & 0.832 & -5.24 & 1.62e-07 \\
+beta_cost-asc_cycling & -5.76e-05 & -0.0251 & 27.5 & 0.0 & -0.000123 & -0.0452 & 24.7 & 0.0 \\
+beta_cost-asc_driving & -3.32e-05 & -0.0218 & 17.9 & 0.0 & -0.000108 & -0.0593 & 15.8 & 0.0 \\
+beta_cost-asc_public & -7.74e-05 & -0.0478 & 20.0 & 0.0 & -0.000187 & -0.101 & 18.5 & 0.0 \\
+beta_time_cycling-asc_cycling & -0.0316 & -0.497 & -1.22 & 0.222 & -0.0359 & -0.473 & -1.14 & 0.256 \\
+beta_time_cycling-asc_driving & 0.00152 & 0.036 & -7.69 & 1.47e-14 & -0.000687 & -0.0135 & -7.06 & 1.61e-12 \\
+beta_time_cycling-asc_public & -0.00214 & -0.0477 & -6.61 & 3.8e-11 & -0.0039 & -0.0755 & -6.13 & 8.94e-10 \\
+beta_time_cycling-beta_cost & 0.00038 & 0.0671 & -12.8 & 0.0 & 0.000742 & 0.115 & -12.0 & 0.0 \\
+beta_time_driving-asc_cycling & 0.00443 & 0.0877 & -3.78 & 0.000158 & 0.00766 & 0.119 & -3.36 & 0.000778 \\
+beta_time_driving-asc_driving & -0.00203 & -0.0607 & -11.3 & 0.0 & -0.00298 & -0.069 & -9.83 & 0.0 \\
+beta_time_driving-asc_public & -0.00311 & -0.0875 & -10.0 & 0.0 & -0.00135 & -0.0307 & -8.96 & 0.0 \\
+beta_time_driving-beta_cost & -0.000638 & -0.142 & -18.1 & 0.0 & -0.000112 & -0.0204 & -15.9 & 0.0 \\
+beta_time_driving-beta_time_cycling & 0.0546 & 0.439 & -1.78 & 0.0757 & 0.0703 & 0.461 & -1.66 & 0.0979 \\
+beta_time_public-asc_cycling & 0.00292 & 0.0814 & 5.26 & 1.46e-07 & 0.00491 & 0.119 & 5.06 & 4.21e-07 \\
+beta_time_public-asc_driving & 0.00126 & 0.053 & -4.66 & 3.2e-06 & 0.00183 & 0.0659 & -4.46 & 8.19e-06 \\
+beta_time_public-asc_public & -0.00659 & -0.261 & -2.76 & 0.00574 & -0.00516 & -0.184 & -2.72 & 0.00658 \\
+beta_time_public-beta_cost & -0.000351 & -0.11 & -13.6 & 0.0 & -3.55e-05 & -0.0101 & -13.2 & 0.0 \\
+beta_time_public-beta_time_cycling & 0.0395 & 0.447 & 5.59 & 2.33e-08 & 0.0464 & 0.475 & 5.33 & 9.78e-08 \\
+beta_time_public-beta_time_driving & 0.0588 & 0.837 & 15.2 & 0.0 & 0.0686 & 0.826 & 12.5 & 0.0 \\
+beta_time_walk-asc_cycling & 0.0266 & 0.564 & -15.5 & 0.0 & 0.0408 & 0.634 & -13.4 & 0.0 \\
+beta_time_walk-asc_driving & 0.0259 & 0.828 & -29.3 & 0.0 & 0.0369 & 0.853 & -23.7 & 0.0 \\
+beta_time_walk-asc_public & 0.0242 & 0.728 & -26.3 & 0.0 & 0.0347 & 0.79 & -21.6 & 0.0 \\
+beta_time_walk-beta_cost & 2.57e-05 & 0.00611 & -27.9 & 0.0 & -2.37e-05 & -0.00434 & -22.8 & 0.0 \\
+beta_time_walk-beta_time_cycling & 0.018 & 0.154 & -6.97 & 3.28e-12 & 0.0189 & 0.124 & -6.09 & 1.15e-09 \\
+beta_time_walk-beta_time_driving & 0.0254 & 0.274 & -6.8 & 1.08e-11 & 0.0359 & 0.277 & -5.76 & 8.5e-09 \\
+beta_time_walk-beta_time_public & 0.018 & 0.274 & -16.3 & 0.0 & 0.0239 & 0.288 & -14.1 & 0.0 \\
+\end{tabular}
