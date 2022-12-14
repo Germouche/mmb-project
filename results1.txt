@@ -1,13 +1,13 @@
 %% This file is designed to be included into a LaTeX document
 %% See http://www.latex-project.org for information about LaTeX
-%% model_1 - Report from biogeme 3.2.10 [2022-12-13]
-%% biogeme 3.2.10 [2022-12-13]
+%% model_1 - Report from biogeme 3.2.10 [2022-12-14]
+%% biogeme 3.2.10 [2022-12-14]
 %% Version entirely written in Python
 %% Home page: http://biogeme.epfl.ch
 %% Submit questions to https://groups.google.com/d/forum/biogeme
 %% Michel Bierlaire, Transport and Mobility Laboratory, Ecole Polytechnique F¨¦d¨¦rale de Lausanne (EPFL)
 
-%% This file has automatically been generated on 2022-12-13 10:21:15.052850</p>
+%% This file has automatically been generated on 2022-12-14 15:49:16.802841</p>
 
 %%Database name: trips
 
@@ -35,7 +35,7 @@ Number of function evaluations & \verb$25$ \\
 Number of gradient evaluations & \verb$9$ \\
 Number of hessian evaluations & \verb$9$ \\
 Cause of termination & \verb$Relative change = 4.66e-06 <= 1e-05$ \\
-Optimization time & \verb$0:00:00.263841$ \\
+Optimization time & \verb$0:00:00.224561$ \\
 \end{tabular}
 
 %%Parameter estimates

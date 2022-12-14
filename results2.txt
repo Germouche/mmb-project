@@ -1,13 +1,13 @@
 %% This file is designed to be included into a LaTeX document
 %% See http://www.latex-project.org for information about LaTeX
-%% model_2 - Report from biogeme 3.2.10 [2022-12-13]
-%% biogeme 3.2.10 [2022-12-13]
+%% model_2 - Report from biogeme 3.2.10 [2022-12-14]
+%% biogeme 3.2.10 [2022-12-14]
 %% Version entirely written in Python
 %% Home page: http://biogeme.epfl.ch
 %% Submit questions to https://groups.google.com/d/forum/biogeme
 %% Michel Bierlaire, Transport and Mobility Laboratory, Ecole Polytechnique F¨¦d¨¦rale de Lausanne (EPFL)
 
-%% This file has automatically been generated on 2022-12-13 10:23:15.071148</p>
+%% This file has automatically been generated on 2022-12-14 16:01:45.313467</p>
 
 %%Database name: trips
 
@@ -17,25 +17,25 @@
 Number of estimated parameters & 10 \\
 Sample size & 5000 \\
 Excluded observations & 0 \\
-Init log likelihood & -4116.139 \\
+Init log likelihood & -6931.472 \\
 Final log likelihood & -4116.139 \\
-Likelihood ratio test for the init. model & 2.076977e-07 \\
-Rho-square for the init. model & 2.52e-11 \\
-Rho-square-bar for the init. model & -0.00243 \\
+Likelihood ratio test for the init. model & 5630.666 \\
+Rho-square for the init. model & 0.406 \\
+Rho-square-bar for the init. model & 0.405 \\
 Akaike Information Criterion & 8252.278 \\
 Bayesian Information Criterion & 8317.45 \\
-Final gradient norm & 2.7779E-02 \\
+Final gradient norm & 1.8355E-02 \\
 Nbr of threads & 16 \\
 Algorithm & \verb$Newton with trust region for simple bound constraints$ \\
 Proportion analytical hessian & \verb$100.0%$ \\
-Relative projected gradient & \verb$1.445949e-05$ \\
-Relative change & \verb$6.236539e-06$ \\
-Number of iterations & \verb$1$ \\
-Number of function evaluations & \verb$4$ \\
-Number of gradient evaluations & \verb$2$ \\
-Number of hessian evaluations & \verb$2$ \\
+Relative projected gradient & \verb$1.057867e-05$ \\
+Relative change & \verb$6.235227e-06$ \\
+Number of iterations & \verb$8$ \\
+Number of function evaluations & \verb$25$ \\
+Number of gradient evaluations & \verb$9$ \\
+Number of hessian evaluations & \verb$9$ \\
 Cause of termination & \verb$Relative change = 6.24e-06 <= 1e-05$ \\
-Optimization time & \verb$0:00:00.052496$ \\
+Optimization time & \verb$0:00:00.324999$ \\
 \end{tabular}
 
 %%Parameter estimates
@@ -45,7 +45,7 @@ Optimization time & \verb$0:00:00.052496$ \\
 asc_cycling & -4.66 & 0.186 & -25.0 & 0.0 \\
 asc_driving & -2.41 & 0.138 & -17.5 & 0.0 \\
 asc_public & -2.62 & 0.128 & -20.4 & 0.0 \\
-beta_cost & -0.0899 & 0.0151 & -5.97 & 2.39e-09 \\
+beta_cost & -0.0899 & 0.0151 & -5.97 & 2.4e-09 \\
 beta_driving_traffic_percent & -2.96 & 0.236 & -12.5 & 0.0 \\
 beta_drivinglicense & 1.44 & 0.0712 & 20.3 & 0.0 \\
 beta_time_cycling & -4.78 & 0.438 & -10.9 & 0.0 \\
@@ -73,10 +73,10 @@ beta_drivinglicense-asc_driving & -0.00319 & -0.357 & 23.4 & 0.0 & -0.00348 & -0
 beta_drivinglicense-asc_public & -0.000408 & -0.0484 & 28.9 & 0.0 & -0.000482 & -0.0529 & 27.1 & 0.0 \\
 beta_drivinglicense-beta_cost & 5.49e-05 & 0.0524 & 21.1 & 0.0 & 4.49e-05 & 0.0419 & 21.2 & 0.0 \\
 beta_drivinglicense-beta_driving_traffic_percent & -0.00213 & -0.131 & 17.9 & 0.0 & -0.00189 & -0.112 & 17.3 & 0.0 \\
-beta_time_cycling-asc_cycling & -0.0329 & -0.494 & -0.243 & 0.808 & -0.0397 & -0.486 & -0.223 & 0.823 \\
+beta_time_cycling-asc_cycling & -0.0329 & -0.495 & -0.243 & 0.808 & -0.0397 & -0.486 & -0.223 & 0.823 \\
 beta_time_cycling-asc_driving & 0.0044 & 0.0874 & -5.75 & 9.12e-09 & 0.00311 & 0.0514 & -5.25 & 1.49e-07 \\
 beta_time_cycling-asc_public & -0.00274 & -0.0578 & -5.05 & 4.38e-07 & -0.00492 & -0.0877 & -4.64 & 3.56e-06 \\
-beta_time_cycling-beta_cost & 0.00038 & 0.0642 & -11.6 & 0.0 & 0.000625 & 0.0948 & -10.7 & 0.0 \\
+beta_time_cycling-beta_cost & 0.00038 & 0.0642 & -11.6 & 0.0 & 0.000625 & 0.0947 & -10.7 & 0.0 \\
 beta_time_cycling-beta_driving_traffic_percent & -0.00718 & -0.0783 & -3.81 & 0.000141 & -0.00996 & -0.0964 & -3.53 & 0.000415 \\
 beta_time_cycling-beta_drivinglicense & -0.00147 & -0.0504 & -15.0 & 0.0 & -0.00122 & -0.0393 & -13.9 & 0.0 \\
 beta_time_driving-asc_cycling & 0.00459 & 0.0826 & 0.666 & 0.506 & 0.00776 & 0.112 & 0.613 & 0.54 \\
@@ -87,7 +87,7 @@ beta_time_driving-beta_driving_traffic_percent & -0.0305 & -0.397 & -3.06 & 0.00
 beta_time_driving-beta_drivinglicense & -0.00218 & -0.0893 & -16.6 & 0.0 & -0.00139 & -0.0528 & -15.4 & 0.0 \\
 beta_time_driving-beta_time_cycling & 0.0586 & 0.426 & 0.908 & 0.364 & 0.0676 & 0.417 & 0.831 & 0.406 \\
 beta_time_public-asc_cycling & 0.00314 & 0.0821 & 6.69 & 2.3e-11 & 0.00503 & 0.115 & 6.47 & 9.77e-11 \\
-beta_time_public-asc_driving & 0.00416 & 0.144 & -1.71 & 0.0882 & 0.00531 & 0.164 & -1.67 & 0.094 \\
+beta_time_public-asc_driving & 0.00416 & 0.144 & -1.7 & 0.0882 & 0.00531 & 0.164 & -1.67 & 0.094 \\
 beta_time_public-asc_public & -0.00751 & -0.275 & -0.732 & 0.464 & -0.00609 & -0.202 & -0.728 & 0.467 \\
 beta_time_public-beta_cost & -0.000334 & -0.0984 & -11.7 & 0.0 & -7.91e-05 & -0.0223 & -11.6 & 0.0 \\
 beta_time_public-beta_driving_traffic_percent & -0.00739 & -0.14 & 0.369 & 0.712 & -0.00993 & -0.179 & 0.354 & 0.723 \\
@@ -97,7 +97,7 @@ beta_time_public-beta_time_driving & 0.0645 & 0.815 & 7.89 & 3.11e-15 & 0.0696 &
 beta_time_walk-asc_cycling & 0.028 & 0.571 & -15.1 & 0.0 & 0.0444 & 0.643 & -12.9 & 0.0 \\
 beta_time_walk-asc_driving & 0.0282 & 0.758 & -27.0 & 0.0 & 0.0415 & 0.812 & -22.0 & 0.0 \\
 beta_time_walk-asc_public & 0.0254 & 0.723 & -25.1 & 0.0 & 0.0376 & 0.792 & -20.6 & 0.0 \\
-beta_time_walk-beta_cost & -3.49e-05 & -0.008 & -27.6 & 0.0 & -0.000223 & -0.0399 & -22.3 & 0.0 \\
+beta_time_walk-beta_cost & -3.5e-05 & -0.008 & -27.6 & 0.0 & -0.000223 & -0.0399 & -22.3 & 0.0 \\
 beta_time_walk-beta_driving_traffic_percent & -0.000816 & -0.012 & -14.3 & 0.0 & -0.00104 & -0.0119 & -12.3 & 0.0 \\
 beta_time_walk-beta_drivinglicense & -0.00166 & -0.0771 & -31.3 & 0.0 & -0.0026 & -0.0985 & -25.6 & 0.0 \\
 beta_time_walk-beta_time_cycling & 0.0189 & 0.156 & -7.72 & 1.18e-14 & 0.0178 & 0.11 & -6.63 & 3.41e-11 \\
